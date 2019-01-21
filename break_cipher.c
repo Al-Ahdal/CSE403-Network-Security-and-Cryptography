@@ -1,5 +1,5 @@
 /*
-*	Program to break the cipher text encrypted with ceaser cipher and obtain all the possible plain texts
+*	Program to break the cipher text encrypted with caeser cipher and obtain all the possible plain texts
 *	Made By Shubham Kumar
 *	sshubhamk1@hotmail.com
 */
@@ -26,10 +26,10 @@ char *Decipher_Caesar(char *cipher_text,int key){
 				orignal_text[i]= (cipher_text[i]-38-key%10)%10+48;
 			}
 			else if(islower(cipher_text[i])){
-				orignal_text[i]= (cipher_text[i]-97+26-key%26)%26+97;
+				orignal_text[i]= (cipher_text[i]-71-key%26)%26+97;
 			}
 			else{
-				orignal_text[i]= (cipher_text[i]-65+26-key%26)%26+65;
+				orignal_text[i]= (cipher_text[i]-39-key%26)%26+65;
 			}
 		}
 	}
